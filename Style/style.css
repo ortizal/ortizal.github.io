@@ -33,6 +33,6 @@ h3 {
     width: 500px;
     border: 1px solid black;
     margin: 0 auto;
-    padding: 20px 0;            
-    text-shadow: 5px 5px 1px black;
-}
+    padding: 20px 0;         
+  }
+p3 {text-decoration: underline }
