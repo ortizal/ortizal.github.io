@@ -12,12 +12,12 @@ body {
         width: 600px;
         margin: 0 auto;
         background-color: rgb(197, 197, 197);      
-        padding: 0 20px 20px 20px;
-        border-bottom: 5px solid black;          
+        padding: 0 20px 20px 20px;       
       }    
-img {
+img.rigth {
         display: block;
         margin: 0 auto;
+        float: right;
     }
 h2{
     font-size: 16px;
