@@ -24,9 +24,8 @@ h2{
     line-height: 2;
     letter-spacing: 1px;
     text-shadow: 5px 5px 1px rgb(155, 161, 241);
-}
-p1{
-  color: aqua  
+    line-height: 2;
+    letter-spacing: 1px;
 }
 h3 {
     color: white;
@@ -35,4 +34,5 @@ h3 {
     border: 1px solid black;
     margin: 0 auto;
     padding: 20px 0;            
-    text-shadow: 5px 5px 1px black;}
+    text-shadow: 5px 5px 1px black;
+}
