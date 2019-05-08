@@ -1,3 +1,6 @@
+html{
+    background-color: rgb(193, 219, 219);
+}
 h1{ color: white;
     width: 500px;
     border: 1px solid black;}
