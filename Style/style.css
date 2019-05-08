@@ -15,9 +15,7 @@ body {
         padding: 0 20px 20px 20px;       
       }    
 img.rigth {
-        display: block;
-        margin: 0 auto;
-        float: right;
+            float: right;
     }
 h2{
     font-size: 16px;
