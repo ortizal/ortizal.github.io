@@ -16,7 +16,11 @@ body {
 img.rigth {
             float: right;
             margin: 0 auto;
-    }
+            padding: 2px 2px;
+            border: rgb(208, 233, 236) 2px solid;
+            border-top-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+          }
 h2{
     color: rgb(185, 185, 8);
     font-family: 'Gugi', cursive;
@@ -40,7 +44,7 @@ h3 {
     color: white;
     background-color: rgb(22, 19, 190);
     width: 500px;
-    border: 1px solid black;
+    
     margin: 0 auto;
     padding: 20px 0; 
     clear: both;        
@@ -56,4 +60,10 @@ p1{
     letter-spacing: 1px;    
     line-height: 2;
     letter-spacing: 1px; 
+}
+img{
+  padding: 2px 2px;
+  border: rgb(213, 219, 219) 5px double;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
