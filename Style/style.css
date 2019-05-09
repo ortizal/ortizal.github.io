@@ -1,13 +1,12 @@
 html{
     background-color: rgb(193, 219, 219);
 }
-h1{ color: white;
+h1,h2{ color: white;
     background-color: rgb(22, 19, 190);
-    width: 500px;
-    border: 1px solid black;
+    width: 500px;    
     margin: 0 auto;
-    padding: 10px 0;            
-    text-shadow: 3px 5px 5px black;}
+    padding: 3px 0;            
+    text-shadow: 3px 5px 1px black;}
 body {
         width: 600px;
         margin: 0 auto;
@@ -21,12 +20,11 @@ img.rigth {
 h2{
     color: rgb(185, 185, 8);
     font-family: 'Gugi', cursive;
-    font-size: 22px;
-    line-height: 1;
-    letter-spacing: 1px;
-    text-shadow: 5px 5px 1px rgb(155, 161, 241);
+    font-size: 18px;
     line-height: 2;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    text-shadow: 5px 5px 1px rgb(0, 0, 0);    
+    letter-spacing: 4px;
 }
 ul{ margin: 0 auto;
   padding: 0 20px 20px 20px; }
