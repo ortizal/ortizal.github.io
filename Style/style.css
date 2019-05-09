@@ -6,8 +6,8 @@ h1{ color: white;
     width: 500px;
     border: 1px solid black;
     margin: 0 auto;
-    padding: 20px 0;            
-    text-shadow: 5px 5px 1px black;}
+    padding: 10px 0;            
+    text-shadow: 3px 5px 5px black;}
 body {
         width: 600px;
         margin: 0 auto;
@@ -16,6 +16,7 @@ body {
       }    
 img.rigth {
             float: right;
+            margin: 0 auto;
     }
 h2{
     font-size: 16px;
@@ -33,7 +34,7 @@ h3 {
     width: 500px;
     border: 1px solid black;
     margin: 0 auto;
-    clear: both;
-    padding: 20px 0;         
+    padding: 20px 0; 
+    clear-: both;        
   }   
 p3 {text-decoration: underline }
