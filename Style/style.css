@@ -24,7 +24,7 @@ h2{
     line-height: 2;
     letter-spacing: 2px;
     text-shadow: 5px 5px 1px rgb(0, 0, 0);    
-    letter-spacing: 4px;
+    letter-spacing: 1px;
 }
 ul{ margin: 0 auto;
   padding: 0 20px 20px 20px; }
