@@ -30,7 +30,11 @@ li{
   padding: 0 0px 7px 40px;  
   width: 300px; 
 }   
-  
+p2{
+  color: rgb(211, 9, 230);
+  font-family: 'Just Another Hand', cursive;
+  font-size: 15px;
+}  
          
 h3 {
     color: white;
