@@ -26,11 +26,12 @@ h2{
     text-shadow: 5px 5px 1px rgb(0, 0, 0);    
     letter-spacing: 1px;
 }
-ul{ margin: 0 auto;
-  padding: 0 20px 20px 20px;  
-  width: 500px;    
-  margin: 0 auto;
-  padding: 3px 0;          
+li{ 
+  padding: 0 0px 7px 40px;  
+  width: 300px; 
+}   
+  
+         
 h3 {
     color: white;
     background-color: rgb(22, 19, 190);
@@ -42,6 +43,9 @@ h3 {
   }   
 p3 {text-decoration: underline }
 p1{
+    margin: 0 auto;
+    padding: 0 20px 20px 10px;  
+    width: 500px; 
     color: rgb(15, 49, 241);    
     font-size: 22px;
     line-height: 2;
