@@ -1,27 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <title> My Page </title>
-        <link href="Style/style.css" rel="stylesheet" type="text/css">
-        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
-
+        <meta charset="utf-8">
+        <meta name="viewport" content="width-divice-width, initial-scale=1">
+        <title>CIT 160 - Assignment Portal - Brother Alexis</title>
+        <meta name= "description" content="This page serves as an assignment portal home page for CIT 160 - an introducction to programming using Java Script at BYU-Idaho.">
+        <link rel="stylesheet" href="css/main.css">
+        <link href="https://fonts.googleapis.com/css?family=Gugi|Quattrocento" rel="stylesheet">
     </head>
-    <body>     
-             
-        <h1>Alexis Ortiz<img  class="rigth" src="Image/Me in the temple.jpg" width="160" height="220" alt="Along with my wife "></h1>             
-        <h2> <strong>CIT 160: Assignment Portal</strong></h2>           
-                  
-        <ul>
-            <p1>Assignment List</p1>
-            <li>Week 3: <a href="https://byui.brightspace.com/d2l/le/content/538652/viewContent/7401176/View?ou=538652">Assignment List Test</a> </li>
-            <li>Week 4: Variables</li>
-            <li>Week 5: Program Assignment Title</li>
-        </ul>        
-        <hr class="corta"> 
-        <h3 align="center"> A. Ortiz | Ecuador | <p3>BYU-Idaho Online Learnig</p3>  | 08/05/2019    
-        <p><img src="Image/Ecuador Temple.png" width="350" height="200" alt="El cielo en la tierra ">  </p>
-        <p2 align="center">Guayaquil-Ecuador-Temple</p2>
-    </h3> 
-    </body> 
-    
+    <body>
+       <header>
+            <img class="rightalign" src="image/Me in the temple.jpg" alt="Porfile Picture">
+            <h1>Alexis Ortiz</h1>
+            <h2>CIT 160: Assignment Portal</h2>
+       </header>
+       <main>
+            <h3>Assignment Links</h3>
+            <ul>
+                <li>Week 3: <a href="#"> Assignment Link Home Page</a></li>
+                <li>week 4: Variables</li>
+            </ul>
+       </main>
+       <footer>
+            <p>
+                Alexis L. Ortiz | Ecuador | <a href="https://www.byui.edu/online" target="_blank" title="BYU-Idaho Online Learning"> BYU-Idaho Online Learning</a> | <span id="currentdate"></span>
+                <picture>
+                    <img src="https://assets.ldscdn.org/e7/c9/e7c99a6f1c194499d2fc426459a2768e50672970/guayaquil_ecuador_temple_lds.jpeg" alt="Guayaquil City Temple">
+                    <br>
+                    <span class="caption">Guayaquil City Temple</span>
+                </picture>
+            </p>
+       </footer>
+
+        <script src="jvs/currentdate.js"> </script>
+    </body>
 </html>
