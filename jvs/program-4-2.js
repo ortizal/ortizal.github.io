@@ -3,7 +3,7 @@ let c = document.getElementById('city').value;
 let s = document.getElementById('state').value;
 let z = document.getElementById('zip').value;
 
-document.getElementById('output').innerHTML = c+','+ s + z;
+document.getElementById('output').innerHTML = c+', '+ s +'  '+ z;
 
 }
 
