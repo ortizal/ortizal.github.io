@@ -10,7 +10,7 @@ function subtotal(){
     if (subt >= 50){
         let total1 = (subt * 10)/100;
        let total = subt - total1;
-        document.getElementById('output').innerHTML = "Today is day of discount"+total;
+        document.getElementById('output').innerHTML = "Today is discount day "+total;
     } else if (subt <50 ){ 
        let total1 = (subt * 6)/100;
        let total = subt - total1;
