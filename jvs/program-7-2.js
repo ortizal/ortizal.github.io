@@ -20,5 +20,5 @@ function subtotal(){
   else {
     let subtotal = (subt * 6)/100;
     let fin =subt + subtotal;
-    document.getElementById('output3').innerHTML = "Your purchase is less than $50. Total is: " + fin;}
+    document.getElementById('output').innerHTML = "Your purchase is less than $50. Total is: " + fin;}
 }
