@@ -5,7 +5,6 @@ document.getElementById('currentdate').innerHTML = date;
 function subtotal(){
   let dayOfWeek = new Date().getDay(); 
   let subt = parseFloat(document.getElementById("subt").value);
-  document.getElementById('output1').innerHTML = "Today is discount day "+ dayOfWeek;
    if (dayOfWeek == 2 || dayOfWeek == 0){
      if (subt >= 50){
         let subtotal = (subt*10)/100;
