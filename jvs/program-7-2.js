@@ -5,7 +5,7 @@ document.getElementById('currentdate').innerHTML = date;
 function subtotal(){
   let dayOfWeek = new Date().getDay(); 
   let subt = parseFloat(document.getElementById("subt").value);
-   if (dayOfWeek == 2 || dayOfWeek == 6){
+   if (dayOfWeek == 2 || dayOfWeek == 3){
      if (subt >= 50){
         let subtotal = (subt*10)/100;
         let total1= (subt - subtotal);
@@ -17,7 +17,6 @@ function subtotal(){
        let fin =subt + subtotal;
        document.getElementById('output').innerHTML = "Your purchase is less than $50. Total is: " + fin;}
     }
-  
   else {
     let subtotal = (subt * 6)/100;
     let fin =subt + subtotal;
