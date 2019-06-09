@@ -5,7 +5,7 @@ document.getElementById('currentdate').innerHTML = date;
 function subtotal(){
   let dayOfWeek = new Date().getDay(); 
   let subt = parseFloat(document.getElementById("subt").value);
-   if (dayOfWeek == 2 || dayOfWeek == 3){
+   if (dayOfWeek == 2 || dayOfWeek == 6){
      if (subt >= 50){
         let subtotal = (subt*10)/100;
         let total1= (subt - subtotal);
