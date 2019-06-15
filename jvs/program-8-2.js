@@ -3,16 +3,32 @@ let date = today.getMonth()+1 + '/' + today.getDate() + '/' + today.getFullYear(
 document.getElementById('currentdate').innerHTML = date;
 
 function gessNumber(){
-      var answer = 38;
-      let number = parseInt(document.getElementById("xnumber").value);
+ let cont =0;
+  let message =
+        "I'm thinking of a number between 1 and 100.\n" +
+        "Try to guess it!\n" +
+        "Please enter an integer between 1 and 100.";
+    let answer = 38;
+    let guess;
+    
     do {
-      
-        if (number < answer) {
-        document.getElementById('output').innerHTML = number +  " is too low. Please enter another integer.";
+        guess = parseInt(prompt(message));
+        if (guess<=100){
+        if (guess < answer) {
+            message = guess +
+            " is too low. Please enter another integer.";
         }
-        else if (number > answer) {
-        document.getElementById('output').innerHTML = number + " is too high. Please enter another integer.";
+        else if (guess > answer) {
+            message = guess +
+            " is too high. Please enter another integer.";
         }
-    } while (number != answer);
-   document.getElementById('output').innerHTML = number +" is correct!";
+      }
+      else{document.getElementById('output').innerHTML = "The number is too high, only to 100";
+      document.getElementById('output2').innerHTML = cont + 'TRY AGAIN ';}
+        cont ++;
+    } while (guess != answer);
+    message = guess + " is correct!";
+    document.getElementById('output').innerHTML = guess +"It's Correct!.";
+    document.getElementById('output2').innerHTML = cont + 'Attempts';
+  
    }
