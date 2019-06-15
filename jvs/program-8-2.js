@@ -28,7 +28,7 @@ function gessNumber(){
         cont ++;
     } while (guess != answer);
     message = guess + " is correct!";
-    document.getElementById('output').innerHTML = guess +"It's Correct!.";
-    document.getElementById('output2').innerHTML = cont + 'Attempts';
+    document.getElementById('output').innerHTML = guess +" It's Correct!.";
+    document.getElementById('output2').innerHTML = cont + ' Attempts';
   
    }
