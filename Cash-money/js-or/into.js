@@ -5,12 +5,12 @@ function singin(){
 let usname=document.getElementById("usname").value;
 let usname1= "ortiz";
 let pasword=document.getElementById("pasword").value;  
-let pasword1='tulcan';
-if (usname == "" || pasword == "") {
-  document.getElementById("output").innerHTML= "Into values";
+let pasword1="tulcan";
+if (usname==usname1 && pasword==pasword1){
+   window.open(document.getElementById('menu'));
 }
-  else if (usname == "usname1" ){
-document.getElementById('output').innerHTML = usname; 
+else{
+  window.alert('Error, Has ingresado mal el usuario o la contraseña. Intenta nuevamente.')
 }
- else { alert ('Wrong'); }
+
 }

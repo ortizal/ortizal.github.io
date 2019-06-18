@@ -1,5 +1,9 @@
 body {
-	text-align: center;
+	margin: 0;
+    background: url(../imagenes/logo.jpg) ;
+    background-repeat: no-repeat; 
+    background-position: center 320px;
+	background-size: 230px;	
 }
 header,
 footer {
@@ -9,8 +13,16 @@ footer {
 }
 
 footer {
+    margin-block-end: 0px;
 	font-size: 13px;
-	letter-spacing: 1.5pt;
+    letter-spacing: 1.5pt;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  
+}
+header{
+	text-align: center;
 }
 
 h1,
@@ -36,9 +48,11 @@ h3 {
 	margin: 0 0 15px 0;
 	border-bottom: 1px solid #333;
 	padding: 0;
+	text-align: center;
 }
 
 label {
 	display: block;
 	margin: 5px;
+	text-align: center;
   }
