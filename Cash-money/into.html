@@ -10,17 +10,24 @@
     </head>
     <body>
         <header>
-            <h1>WELLCOME</h1>
+            <h1>BIENVENIDO</h1>
             <h2>Name cash</h2>
           </header>
-          <main>
-            <h3> Sing in</h3>
-            <label> User name: <input type=text id="usname"></label>
-            <label> Pasword: <input type=text id="pasword">
-              <label><button onclick="singin()"> Sing in </button></label>
-              <hr>
-              <a href="../Cash-money/menu.html" id="menu"></a>
+          <main class=login-box>
+            <img src="imagenes/logo.jpg" class="avatar" alt="Imagen logo">
+            <h3> INICIO DE SESION</h3>
+            <label> USUARIO <input type=text id="usname"  placeholder="USUARIO"></label>
+            <label> CONTRASEÑA <input type=text id="pasword" placeholder="CONTRASEÑA">
+              <label><button onclick="singin()" class="btn"> Sing in </button></label>
+              <a href="menu.html" id="menulu"></a>
           </main>   
+          <div class="ventana" id="vent"> 
+                <img src="../Cash-money/imagenes/logo.jpg" alt="Ventana Flotante" >
+                <div id="cerrar">
+                   <a href=><img src="../Cash-money/imagenes/cerrar.png" alt=""></a>
+                </div>
+
+        </div>
             <footer>
             &copy;2019 &bull; Brothes Ortiz &bull; Name Cash &bull; Company &bull; <span id="currentdate"></span>
             </footer>
