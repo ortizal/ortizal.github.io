@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+header{
+    width: 100%;
+    background: green;
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 30;
+    height: 30;
+    padding: 10px;
+    
+}
+header label img:hover{
+cursor: pointer;
+background: rgba(0,0,0,0.3);
+border: 1px solid white;
+}
+.menu ul{
+    margin: 0px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.menu li a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+}
