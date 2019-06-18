@@ -9,6 +9,9 @@ body{
 header{
     width: 100%;
     background: green;
+    font-size: 13px;
+    letter-spacing: 1.5pt;
+    text-align: center;
 }
 #btn-menu{
     display: none;
@@ -33,7 +36,7 @@ border: 1px solid white;
 }
 .menu li{
     border-right: 1px solid white;
-   text-align: center;
+
 }
 .menu li:hover{
     cursor: pointer;
