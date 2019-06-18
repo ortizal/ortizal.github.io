@@ -1,14 +1,3 @@
-    function accion(){
-        console.log('está funcionando mi boton');
-        var ancla = document.getElementsByClassName('nav-enlace');
-        for(var i = 0; i < ancla.length; i++){
-            ancla[i].classList.toggle('desaparece');
-        }
-    }
-    function contabilidad(){
-        console.log('está funcionando mi boton');
-        var ancla = document.getElementsByClassName('nav-enlace');
-        for(var i = 0; i < ancla.length; i++){
-            ancla[i].classList.toggle('desaparece');
-        }
-    }
+let today = new Date ();
+let date = today.getMonth()+1 + '/' + today.getDate() + '/' + today.getFullYear();
+document.getElementById('currentdate').innerHTML = date; 
