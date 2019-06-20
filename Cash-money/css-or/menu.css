@@ -28,54 +28,12 @@ cursor: pointer;
 background: rgba(0,0,0,0.3);
 border: 1px solid white;
 }
-.menu ul{
-    margin: 0px;
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-.menu li{
-    border-right: 1px solid white;
-
-}
-.menu li:hover{
-    cursor: pointer;
-    background: rgba(0,0,0,0.3);
-}
-.menu li a{
-    display: block;
-    padding: 10px 15px;
-    color: white;
-    text-decoration: none;
-}
-@media (max-width: 768px){
-header label{
-    display: block;
-}
-.menu{
-    position: absolute;
-    background: green;
-    width: 70%;
-    margin-left: -70%;
-    transition: 0.5s;
-}
-.menu ul{
-flex-direction: column;
-}
-.menu li{
-    border-top: 1px solid white;
-}
-#btn-menu:checked ~ .menu{
-    margin: 0;
-
-}
-}
 footer {
     margin-block-end: 0px;
-	font-size: 13px;
+    font-size: 13px;
     letter-spacing: 1.5pt;
     background-color: green;
-	color: #fff;
+    color: #fff;
     padding: 10px;
     position: absolute;
     bottom: 0;
@@ -83,5 +41,79 @@ footer {
   
 }
 #currentdate {
-	color: yellow;
+    color: yellow;
 }
+
+/*Ediciones generales*/
+nav ul{
+    margin: 0px;
+    list-style: none;
+    padding: 0px ;
+    display: flex;
+}
+nav li {
+    line-height: 1rem;
+    position: relative;
+}
+nav li:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+nav li  ul{
+    position: absolute;
+}
+nav a{
+    color: #ddd;
+    display: block;
+    padding: 10px 15px;
+    text-decoration: none;
+    transition: .4s
+}
+
+nav ul ul {
+    display: table;
+}
+nav li ul {
+    display: none;
+}
+nav li:hover ul{
+    display: block;
+    top: 52px;
+}
+/*Ediciones primer nivel*/
+nav > ul{
+    background: green;
+    display: flex;
+    width: 100%;
+}
+nav > ul > li{
+    border-right: 1px solid white;
+}
+/*Ediciones segundo nivel*/
+nav li li{
+    background: green;
+}
+/*Ediciones pantalla pequeña*/
+@media (max-width: 768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: green;
+        width: 70%;
+        margin-left: -70%;
+        transition: 0.5s;
+    }
+    .menu ul{
+    flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid white;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    
+    }
+    }
+    

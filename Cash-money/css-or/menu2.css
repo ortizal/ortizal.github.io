@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: url(../imagenes/logo.jpg) ;
+    background-repeat: no-repeat; 
+    background-position: center 50px;
+    background-size: 500px;
+}
+header{
+    width: 100%;
+    background: green;
+    font-size: 13px;
+    letter-spacing: 1.5pt;
+    text-align: center;
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 20;
+    height: 20;
+    padding: 5px;
+    
+}
+header label img:hover{
+cursor: pointer;
+background: rgba(0,0,0,0.3);
+border: 1px solid white;
+}
+.menu ul{
+    margin: 0px;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+.menu li{
+    border-right: 1px solid white;
+
+}
+.menu li:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+.menu li a{
+    display: block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+@media (max-width: 768px){
+header label{
+    display: block;
+}
+.menu{
+    position: absolute;
+    background: green;
+    width: 70%;
+    margin-left: -70%;
+    transition: 0.5s;
+}
+.menu ul{
+flex-direction: column;
+}
+.menu li{
+    border-top: 1px solid white;
+}
+#btn-menu:checked ~ .menu{
+    margin: 0;
+
+}
+}
+footer {
+    margin-block-end: 0px;
+	font-size: 13px;
+    letter-spacing: 1.5pt;
+    background-color: green;
+	color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  
+}
+#currentdate {
+	color: yellow;
+}
