@@ -7,7 +7,7 @@ body{
     background-size: 500px;
 }
 header{
-    width: 100%;
+    width: auto;
     background: green;
     font-size: 13px;
     letter-spacing: 1.5pt;
@@ -32,7 +32,7 @@ footer {
     margin-block-end: 0px;
     font-size: 13px;
     letter-spacing: 1.5pt;
-    background-color: green;
+    background-color:green;
     color: #fff;
     padding: 10px;
     position: absolute;
@@ -50,7 +50,7 @@ nav ul{
     list-style: none;
     padding: 0px ;
     display: flex;
-}
+ }
 nav li {
     line-height: 1rem;
     position: relative;
@@ -64,8 +64,8 @@ nav li  ul{
 }
 nav a{
     color: #ddd;
-    display: block;
-    padding: 10px 15px;
+    display: flex;
+    padding: 1em 1em;
     text-decoration: none;
     transition: .4s
 }
@@ -78,7 +78,7 @@ nav li ul {
 }
 nav li:hover ul{
     display: block;
-    top: 52px;
+    top: 64px;
 }
 /*Ediciones primer nivel*/
 nav > ul{
@@ -113,7 +113,6 @@ nav li li{
     }
     #btn-menu:checked ~ .menu{
         margin: 0;
-    
     }
     }
     
