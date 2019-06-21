@@ -98,20 +98,20 @@ nav li li{
     header label{
         display: block;
     }
-    nav{
+    .menu{
         position: absolute;
         background: green;
         width: 70%;
         margin-left: -70%;
         transition: 0.5s;
     }
-    nav ul{
+    .menu{
     flex-direction: column;
     }
-    nav li{
+    .menu li{
         border-top: 1px solid white;
     }
-    #btn-menu:checked ~ nav{
+    #btn-menu:checked ~ .menu{
         margin: 0;
     }
     }
