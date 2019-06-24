@@ -105,13 +105,13 @@ nav li li{
         margin-left: -70%;
         transition: 0.5s;
     }
-    .menu{
+    nav{
     flex-direction: column;
     }
-    .menu li{
+    nav li{
         border-top: 1px solid white;
     }
-    #btn-menu:checked ~ .menu{
+    #btn-menu:checked ~ nav{
         margin: 0;
     }
     }
