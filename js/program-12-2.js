@@ -4,7 +4,7 @@ let date =
 document.getElementById("currentdate").innerHTML = date;
 function getMiddle() {
   let list = [85, 45, 2, 47];
-   
+  document.getElementById("showArray").innerHTML = list; 
   if (list.length % 2 == 1) {
   let mid = list[list.length >>> 1];
   document.getElementById("output").innerHTML = mid;}
