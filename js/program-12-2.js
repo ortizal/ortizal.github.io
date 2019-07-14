@@ -7,11 +7,11 @@ function getMiddle() {
    
   if (list.length % 2 == 1) {
   let mid = list[list.length >>> 1];
-  document.getElementById("output2").innerHTML = mid;}
+  document.getElementById("output").innerHTML = mid;}
   else {
   let upper = list[list.length >>> 1];
   let lower = list[(list.length >>> 1)-1]; ;
   let mid = (upper + lower)/2;
-  document.getElementById("output2").innerHTML = mid; 
+  document.getElementById("output").innerHTML = mid; 
   }
   }
