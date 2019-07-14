@@ -24,7 +24,6 @@ function getMiddle() {
       answer = (list[list.length / 2 - 1] + list[list.length / 2]) / 2;
       document.getElementById("output2").innerHTML = answer;
     } else {
-      // odd length array (middle elements)
       answer = list[(list.length - 1) / 2];
       document.getElementById("output2").innerHTML = answer;
     }
