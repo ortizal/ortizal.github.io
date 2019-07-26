@@ -64,7 +64,7 @@
             </ul></li>
            </nav>
         <main> 
-            <table id="templeData">
+       <!--     <table id="templeData">
                 <tr>
                   <th>MOD</th>
                   <th>CUENTA</th>
@@ -103,7 +103,54 @@
                   <td>2002</td>
                   <td>48,100</td>
                 </tr>
-              </table>       
+              </table>   -->
+              
+              <div id="table" class="table-editable">
+                <button><span class="table-add glyphicon glyphicon-plus">Añadir</span></button>
+                <table class="table" id= "templeData">
+                  <tr>
+                    <th>MOD</th>
+                    <th>CUENTA</th>
+                    <th>REF</th>
+                    <th>DESCRIPCION</th>
+                    <th>DEBE</th>
+                    <th>HABER</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                  <tr>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td>
+                     <button> <span class="table-remove glyphicon glyphicon-remove">Quitar</span></button>
+                    </td>
+                    <td>
+                     <button> <span class="table-up glyphicon glyphicon-arrow-up">Subir</span></button>
+                      <button><span class="table-down glyphicon glyphicon-arrow-down">Bajar</span></button>
+                    </td>
+                  </tr>
+                  <!-- This is our clonable table line -->
+                  <tr class="hide">
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td contenteditable="true"></td>
+                    <td>
+                        <button> <span class="table-remove glyphicon glyphicon-remove">Quitar</span></button>
+                       </td>
+                       <td>
+                        <button> <span class="table-up glyphicon glyphicon-arrow-up">Subir</span></button>
+                        <button><span class="table-down glyphicon glyphicon-arrow-down">Bajar</span></button>
+                    </td>
+                  </tr>
+                </table>
+              </div>
         </main>    
         <footer>
             &copy;2019 &bull; Brothers Ortiz &bull; Name Cash &bull; Company &bull; <span id="currentdate"></span>
