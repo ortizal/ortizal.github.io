@@ -1,0 +1,138 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+    background: url(../../imagenes/logo.jpg) ;
+    background-repeat: no-repeat; 
+    background-position: center 50px;
+    background-size: 500px;
+}
+header{
+    width: auto;
+    background: green;
+    font-size: 13px;
+    letter-spacing: 1.5pt;
+    text-align: center;
+}
+#btn-menu{
+    display: none;
+}
+header label{
+    display: none;
+    width: 20;
+    height: 20;
+    padding: 5px;
+    
+}
+header label img:hover{
+cursor: pointer;
+background: rgba(0,0,0,0.3);
+border: 1px solid white;
+}
+footer {
+    margin-block-end: 0px;
+    font-size: 13px;
+    letter-spacing: 1.5pt;
+    background-color:green;
+    color: #fff;
+    padding: 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  
+}
+#currentdate {
+    color: yellow;
+}
+
+/*Ediciones generales*/
+nav ul{
+    margin: 0px;
+    list-style: none;
+    padding: 0px ;
+    display: flex;
+ }
+nav li {
+    line-height: 1rem;
+    position: relative;
+}
+nav li:hover{
+    cursor: pointer;
+    background: rgba(0,0,0,0.3);
+}
+nav li  ul{
+    position: absolute;
+}
+nav a{
+    color: #ddd;
+    display: flex;
+    padding: 1em 1em;
+    text-decoration: none;
+    transition: .4s
+}
+
+nav ul ul {
+    display: table;
+}
+nav li ul {
+    display: none;
+}
+nav li:hover ul{
+    display: block;
+    top: 64px;
+}
+/*Ediciones primer nivel*/
+nav > ul{
+    background: green;
+    display: flex;
+    width: 100%;
+}
+nav > ul > li{
+    border-right: 1px solid white;
+}
+/*Ediciones segundo nivel*/
+nav li li{
+    background: green;
+}
+/*Ediciones pantalla pequeña*/
+@media (max-width: 768px){
+    header label{
+        display: block;
+    }
+    .menu{
+        position: absolute;
+        background: green;
+        width: 70%;
+        margin-left: -70%;
+        transition: 0.5s;
+    }
+    .menu{
+    flex-direction: column;
+    }
+    .menu li{
+        border-top: 1px solid white;
+    }
+    #btn-menu:checked ~ .menu{
+        margin: 0;
+    }
+    }
+    /*EDICIONES PARA LA TABLA */
+    #templeData {
+        border-collapse: collapse;
+        margin: 5px auto;
+      }
+      #templeData th {
+        background-color: #333;
+        color: #fff;
+      }
+      #templeData th,
+      #templeData td {
+        border: 1px solid #999;
+        padding: 7px;
+      }
+      #templeData tr:nth-child(odd) {
+        background-color: #eee;
+      }
+      #templeData tr:nth-child(even) {
+        background-color: #bed;
+      }
+      

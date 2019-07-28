@@ -6,11 +6,21 @@ var $TABLE = $('#table');
 var $BTN = $('#export-btn');
 var $EXPORT = $('#export');
 
-$('.table-add').click(function () {
-  var $clone = $TABLE.find('tr.hide').clone(true).removeClass('hide table-line');
-  $TABLE.find('table').append($clone);
-});
-
+//$('.table-add').click(
+    function add() {
+        /*var tbl=document.getElementById("templeData");
+  var $clone = tbl.find('tr.hide').clone(true).removeClass('hide table-line');
+  tbl.find('table').append($clone);*/
+  var table = document.getElementById("templeData");
+  {
+  var row = table.insertRow(0);
+  var cell1 = row.insertCell(0);
+  var cell2 = row.insertCell(1);
+  cell1.innerHTML = "Quiero insertar input text aaqui";
+  cell2.innerHTML = "Aqui tambien";
+  }
+}
+/*
 $('.table-remove').click(function () {
   $(this).parents('tr').detach();
 });
@@ -55,4 +65,4 @@ $BTN.click(function () {
   
   // Output the result
   $EXPORT.text(JSON.stringify(data));
-});
+});*/
