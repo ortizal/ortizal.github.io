@@ -2,17 +2,17 @@ let today = new Date ();
 let date = today.getMonth()+1 + '/' + today.getDate() + '/' + today.getFullYear();
 document.getElementById('currentdate').innerHTML = date; 
 
-function add(){
-  let columnas = parseInt(prompt ("Cuantas columnas deseas?"));
-  let filas = parseInt(prompt ("Cuantas filas deseas?"));
-  let tableHtml = "<table border =\"1\"><tbody>";
-  for (var i =0; i <filas ; i++){
-    tableHtml += "<tr>";
-    for(var j=0; j< columnas;j++){
-      tableHtml += "<td>"+i+","+j+"</td><!--celda-->";
+function add() {
+  var numColumnas=8;
+  var numFilas=1;
+  var codigoHTML="<table border=\"1\"><tbody>";
+  for (var i = 0; i < numFilas; i++) {
+    codigoHTML+="<tr>";
+    for (var j = 0; j < numColumnas; j++) {
+      codigoHTML+="<td></td><!--celda-->";
     }
-    tableHtml +="</tr>";
+    codigoHTML+="</tr>";
   }
-  tableHtml += "</tbody></table>";
-  document.getElementById("ouput").innerHTML = tableHtml;
+  codigoHTML+="</tbody></table>";
+  document.getElementById("temp4leData").innerHTML = codigoHTML;
 }
