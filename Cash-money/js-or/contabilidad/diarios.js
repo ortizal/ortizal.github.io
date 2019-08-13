@@ -2,67 +2,17 @@ let today = new Date ();
 let date = today.getMonth()+1 + '/' + today.getDate() + '/' + today.getFullYear();
 document.getElementById('currentdate').innerHTML = date; 
 
-var $TABLE = $('#table');
-var $BTN = $('#export-btn');
-var $EXPORT = $('#export');
-
-//$('.table-add').click(
-    function add() {
-        /*var tbl=document.getElementById("templeData");
-  var $clone = tbl.find('tr.hide').clone(true).removeClass('hide table-line');
-  tbl.find('table').append($clone);*/
-  var table = document.getElementById("templeData");
-  {
-  var row = table.insertRow(0);
-  var cell1 = row.insertCell(0);
-  var cell2 = row.insertCell(1);
-  cell1.innerHTML = "Quiero insertar input text aaqui";
-  cell2.innerHTML = "Aqui tambien";
+function add(){
+  let columnas = parseInt(prompt ("Cuantas columnas deseas?"));
+  let filas = parseInt(prompt ("Cuantas filas deseas?"));
+  let tableHtml = "<table border =\"1\"><tbody>";
+  for (var i =0; i <filas ; i++){
+    tableHtml += "<tr>";
+    for(var j=0; j< columnas;j++){
+      tableHtml += "<td>"+i+","+j+"</td><!--celda-->";
+    }
+    tableHtml +="</tr>";
   }
+  tableHtml += "</tbody></table>";
+  document.getElementById("ouput").innerHTML = tableHtml;
 }
-/*
-$('.table-remove').click(function () {
-  $(this).parents('tr').detach();
-});
-
-$('.table-up').click(function () {
-  var $row = $(this).parents('tr');
-  if ($row.index() === 1) return; // Don't go above the header
-  $row.prev().before($row.get(0));
-});
-
-$('.table-down').click(function () {
-  var $row = $(this).parents('tr');
-  $row.next().after($row.get(0));
-});
-
-// A few jQuery helpers for exporting only
-jQuery.fn.pop = [].pop;
-jQuery.fn.shift = [].shift;
-
-$BTN.click(function () {
-  var $rows = $TABLE.find('tr:not(:hidden)');
-  var headers = [];
-  var data = [];
-  
-  // Get the headers (add special header logic here)
-  $($rows.shift()).find('th:not(:empty)').each(function () {
-    headers.push($(this).text().toLowerCase());
-  });
-  
-  // Turn all existing rows into a loopable array
-  $rows.each(function () {
-    var $td = $(this).find('td');
-    var h = {};
-    
-    // Use the headers from earlier to name our hash keys
-    headers.forEach(function (header, i) {
-      h[header] = $td.eq(i).text();   
-    });
-    
-    data.push(h);
-  });
-  
-  // Output the result
-  $EXPORT.text(JSON.stringify(data));
-});*/
