@@ -117,7 +117,9 @@ nav li li{
     }
     /*EDICIONES PARA LA TABLA */
     table{
-        top: 20px;
+        position: fixed;
+        top: 200px;
+        left: 450px;
     }
     #diariosData {
         border-collapse: collapse;
@@ -154,16 +156,16 @@ nav li li{
       }
       #lblconcepto{
         position: fixed;
-        top: 5em;
-        left: 5em;
+        top: 7em;
+        left: 20em;
       }
       #concepto{
         position: fixed;
-        top: 7.7em;
-        left: 15em;
+        top: 7em;
+        left: 40em;
       }
       /*Boton añadir*/
       #añadirFila{
-        top: 7.7em;
-        left: 50em;
+        top: 7em;
+        left: 30em;
       }
