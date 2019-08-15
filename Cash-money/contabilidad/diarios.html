@@ -65,9 +65,12 @@
             </ul></li>
            </nav>      
         <main>             
-              <div id="table" class="table-editable">
-                <button><span class="table-add glyphicon glyphicon-plus" onclick="add()">Añadir</span></button>
-                <table class="table" id= "templeData">
+          <label id="lblnumreodiario">Numero Diario<input type="text" id="numeroDiario"></label>          
+          <label id="lblfecha">Fecha<input type="text" id="fecha" placeholder="mm/dd/aaaa"></label>          
+          <label id="lblconcepto">Concepto<input type="text" id="concepto"></label>          
+               <div id="table" class="table-editable">
+                <button><span class="table-add" id="añadirFila" onclick="añadirFila()">Añadir</span></button>
+                <table class="table" id= "diariosData">
                   <tr>
                     <th>MOD</th>
                     <th>CUENTA</th>
@@ -85,7 +88,7 @@
                     <td contenteditable="true"></td>
                     <td contenteditable="true"></td>
                     <td>
-                     <button> <span class="table-remove glyphicon glyphicon-remove">Quitar</span></button>
+                     <button> <span class="table-remove">Quitar</span></button>
                     </td>
                      </tr>
                   <!--This is our clonable table line -->
@@ -97,7 +100,7 @@
                     <td contenteditable="true"></td>
                     <td contenteditable="true"></td>
                     <td>
-                      <button> <span class="table-remove glyphicon glyphicon-remove">Quitar</span></button>
+                      <button> <span class="table-remove">Quitar</span></button>
                     </td>
                        
                   </tr>

@@ -116,23 +116,54 @@ nav li li{
     }
     }
     /*EDICIONES PARA LA TABLA */
-    #templeData {
+    table{
+        top: 20px;
+    }
+    #diariosData {
         border-collapse: collapse;
         margin: 5px auto;
       }
-      #templeData th {
+      #diariosData th {
         background-color: #333;
         color: #fff;
       }
-      #templeData th,
-      #templeData td {
+      #diariosData th,
+      #diariosData td {
         border: 1px solid #999;
         padding: 7px;
       }
-      #templeData tr:nth-child(odd) {
+      #diariosData tr:nth-child(odd) {
         background-color: #eee;
       }
-      #templeData tr:nth-child(even) {
+      #diariosData tr:nth-child(even) {
         background-color: #bed;
       }
-      
+      /*labels e imputs*/
+      #lblfecha{
+        position: fixed;
+        top: 5em;
+        left: 50em;
+      }
+      #fecha{
+        position: fixed;
+        top: 7.7em;
+        left: 80em;
+      }
+      label{
+          font-size: 20px;
+      }
+      #lblconcepto{
+        position: fixed;
+        top: 5em;
+        left: 5em;
+      }
+      #concepto{
+        position: fixed;
+        top: 7.7em;
+        left: 15em;
+      }
+      /*Boton añadir*/
+      #añadirFila{
+        top: 7.7em;
+        left: 50em;
+      }
