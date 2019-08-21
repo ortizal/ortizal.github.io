@@ -156,16 +156,27 @@ nav li li{
       }
       #lblconcepto{
         position: fixed;
-        top: 7em;
-        left: 20em;
+        top: 8em;
+        left: 15em;
       }
       #concepto{
         position: fixed;
-        top: 7em;
-        left: 40em;
+        top: 12em;
+        left: 34em;
+      }
+      #lblnumreodiario{
+        position: fixed;
+        top: 6.4em;
+        left: 15em;
+      }
+      #numeroDiario{
+        position: fixed;
+        top: 10em;
+        left: 34em;
       }
       /*Boton añadir*/
       #añadirFila{
-        top: 7em;
-        left: 30em;
+        position: relative;
+        top: 10px;
+        left: 350px;
       }
