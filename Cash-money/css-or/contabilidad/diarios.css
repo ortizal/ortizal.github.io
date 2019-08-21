@@ -138,7 +138,7 @@ nav li li{
         background-color: #eee;
       }
       #diariosData tr:nth-child(even) {
-        background-color: #bed;
+        background-color: #87e661;
       }
       /*labels e imputs*/
       #lblfecha{
@@ -177,6 +177,6 @@ nav li li{
       /*Boton añadir*/
       #añadirFila{
         position: relative;
-        top: 10px;
-        left: 350px;
+        top: 95px;
+        left: 850px;
       }
