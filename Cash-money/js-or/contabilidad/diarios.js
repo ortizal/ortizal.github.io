@@ -5,8 +5,8 @@ document.getElementById('currentdate').innerHTML = date;
 function añadirFila() {
   var numColumnas=8;
   var numFilas=1;
-  //var codigoHTML="<table border=\"1\"><tbody>";
-  var codigoHTML= document.getElementById("diariosData").nodeValue;
+  var codigoHTML="<table border=\"1\"><tbody>";
+ // var codigoHTML= document.getElementById("diariosData").nodeValue;
   for (var i = 0; i < numFilas; i++) {
     codigoHTML+="<tr>";
     for (var j = 0; j < numColumnas; j++) {
