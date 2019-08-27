@@ -1,13 +1,13 @@
 <?php
-$usr_id= $_POST("txt_id");
-$usr_nombre= $_POST("txt_nombre");
-$usr_apellido= $_POST("txt_apellido");
-$usr_fechaNc= $_POST("text_fechaNc");
-$usr_email= $_POST("text_email");
-$usr_telefono= $_POST("text_telefono");
-$usr_usuario= $_POST("text_usuario");
-$usr_contraseña= $_POST("text_contraseña");
-$usr_cedula= $_POST("text_cedula");
+$id = $_POST['txt_id'];
+$nombre = $_POST['txt_nombre'];
+$apellido = $_POST['txt_apellido'];
+$fechaNc = $_POST['text_fechaNc'];
+$email = $_POST['text_email'];
+$telefono = $_POST['text_telefono'];
+$usuario = $_POST['text_usuario'];
+$contraseña = $_POST['text_contraseña'];
+$cedula = $_POST['text_cedula'];
 //include("conection.php");
 // $sql= "INSERT INTO usuario(usr_id,usr_nombre,usr_apellido,usr_fechaNc,usr_email,usr_telefono,usr_usuario,usr_contraseña,usr_cedula) VALUES ('$usr_id','$usr_nombre','$usr_apellido','$usr_fechaNc','$usr_email','$usr_telefono','$usr_usuario','$usr_contraseña','$usr_cedula')"; 
  //myqli_query($conection,$sql);
