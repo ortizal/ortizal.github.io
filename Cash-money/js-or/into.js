@@ -16,3 +16,6 @@ else{
   window.alert('Error, Has ingresado mal el usuario o la contraseña. Intenta nuevamente.')
 }
 }
+function registro(){  
+  location.href="registro.html";
+}
