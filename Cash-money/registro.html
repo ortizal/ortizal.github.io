@@ -13,25 +13,25 @@
         <header>
             <h1>REGISTRO DE USUARIO</h1>
             <h2>Name cash</h2>
-          </header>
-          <form action="../Cash-money/php-or/imr/registro/insert.php" method="POST">
+          </header>          
           <main class=login-box >
+            <form action="../Cash-money/php-or/imr/registro/insert.php" method="POST">
             <img src="imagenes/logo.jpg" class="avatar" alt="Imagen logo">
             <h3> REGISTRO DE USUARIO</h3>
-            <label> ID <input type="text" name="txt_id" id="usr_id" placeholder="Automatico">
+            <label> ID <input type="number" name="txt_id" id="usr_id" placeholder="Automatico">
             <label> Nombre <input type=text name="txt_nombre" id="urs_nombre"  ></label>
             <label> Apellido <input type="text" name="txt_apellido" id="usr_apellio" >
-            <label> Fecha de nacimiento <input type=text name="txt_fechaN"id="usr_fecha-de-nacimiento"  placeholder="aaaa-mm-dd"></label>           
-            <label> Correo electronico <input type=text name="txt_email" id="usr_e-mail"  placeholder="e-mail"></label>
-            <label> Telefono <input type="text" name="txt_telf" id="usr_telefono" placeholder="Telefono o Celular">
-            <label> USUARIO <input type=text name="txt_usr" id="usname"  placeholder=></label>
-            <label> CONTRASEÑA <input type="password" name="txt_contraseña" id="pasword" placeholder=>
-            <label> Cedula <input type="text" name="txt_cedula" id="usr_cedula" placeholder=>
+            <label> Fecha de nacimiento <input type="text" name="txt_fechaNc" id="usr_fecha-de-nacimiento" placeholder="aaaa-mm-dd"></label>           
+            <label> Correo electronico<i nput type="text" name="txt_email" id="usr_e-mail" placeholder="e-mail"></label>
+            <label> Telefono <input type="text" name="txt_telf" id="usr_telefono" placeholder="Telefono o Celular"></label>
+            <label> USUARIO <input type="text" name="txt_usr" id="usname"></label>
+            <label> CONTRASEÑA <input type="password" name="txt_contraseña" id="pasword" ></label>
+            <label> Cedula <input type="text" name="txt_cedula" id="usr_cedula" ></label>
             <label><button type="submit" class="btn"> Crear </button></label>
             <a href="menu.html" id="menulu"></a>
-              
+          </form> 
           </main>   
-        </form>
+        
           <div class="ventana" id="vent"> 
                 <img src="../Cash-money/imagenes/logo.jpg" alt="Ventana Flotante" >
                 <div id="cerrar">
