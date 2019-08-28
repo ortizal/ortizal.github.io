@@ -1,9 +1,9 @@
 <?php
-$host = "localhost";
-$user = "root";
-$pass = "";
-$db = "contabilidaddb";
-mysql_connect($host, $user, $pass);
-//mysql_set_charset($conection, "utf8");
-mysql_select_db($db);
+$conexion = mysqli_connect("localhost","root","","contabilidaddb");
+if ($conexion){
+    echo "exitoso";
+}else{
+    echo "error";
+}
+
 ?>
