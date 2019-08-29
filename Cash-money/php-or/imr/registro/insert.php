@@ -11,11 +11,12 @@ $contraseña = $_POST['txt_contraseña'];
 $cedula = $_POST['txt_cedula'];
 $res="INSERT INTO usuarios(usr_id, usr_nombres, usr_apellidos, usr_fechaNacimiento, usr_email, usr_telefono, usr_usuario, usr_contraseña, usr_cedula)
  VALUES ('$id','$nombre','$apellido','$fechaNc','$email','$telefono','$usuario','$contraseña','$cedula')"; 
-$resultado=mysqli_query($con,$res);
+$resultado=mysqli_query($con,$res) or die (mysqli_error($con));
 if ($resultado){
     echo "exitoso";
 }else{
     echo "error";
 }
 
+echo"la cedula es:".$cedula;
 ?>
