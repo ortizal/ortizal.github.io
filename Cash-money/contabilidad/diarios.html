@@ -64,7 +64,7 @@
                 <li><a href="../activos-fijos/activos-fijos.html">ACTIVOS FIJOS</a></li>
             </ul></li>
            </nav>      
-        <main>             
+        <!--<main>             
           <label id="lblnumreodiario">Numero diario<input type="text" id="numeroDiario"></label>          
           <label id="lblfecha">Fecha<input type="text" id="fecha" placeholder="  mm/dd/aaaa"></label>          
           <label id="lblconcepto">Concepto<input type="text" id="concepto" size="40"></label>          
@@ -93,7 +93,7 @@
                      <button> <span class="table-remove">Quitar</span></button>
                     </td>
                      </tr>
-                  <!--This is our clonable table line -->
+                 This is our clonable table line
                   <tr class="hide">
                     <td contenteditable="true"></td>
                     <td contenteditable="true"></td>
@@ -109,8 +109,67 @@
                   </tr>
                 </table>
               </div>
-        </main>    
-        <footer>
+        </main> -->  
+        <form action="../php-or/contabiliad/diarios/drs_insert.php" method="POST">
+        <fieldset id ="tablaingreso"> 
+          <legend>Ingreso de Datos</legend>
+          <table>
+              <tr>
+                <td>Numero diario:
+                  <input type="text" name="txt_numDiario">
+                  Fecha:
+                    <input type="text" name="txt_fecha">
+                </td>
+              </tr>
+              <tr>
+                  <td>Concepto :
+                    <input type="text" name="txt_concepto" size="60px">
+                    
+                  </td>
+              </tr>
+              <tr>
+                  <td>Modulo :
+                    <input type="radio" name="txt_modulo" checked value ="debe"/>Debe
+                    <input type="radio" name="txt_modulo"value ="haber"/>Haber
+                    Cuenta:
+                    <input type="text" name="txt_cuenta">
+                  </td>
+               </tr>
+                <tr>
+                    <td>Referencia:
+                      <input type="text" name="txt_referencia">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Debe:
+                      <input type="text" name="txt_debe">
+                    </td>
+                 </tr>
+                 <tr>
+                    <td>Haber:
+                      <input type="text" name="txt_haber">
+                      <button type="submit">Agregar</button>
+                    </td>
+                  </tr>
+          </table>
+        </fieldset>
+        <hr>
+        <fieldset id="tabladatos">
+        <legend>Datos para visualizar</legend>
+          <table id="datos">
+            <tr>
+              <th>Modulo</th>
+              <th>Cuenta</th>
+              <th>Referencia</th>
+              <th>Concepto</th>
+              <th>Debe</th>
+              <th>Haber</th>
+            </tr>
+
+          </table>
+        </fieldset>
+      </form>
+       <footer>
             &copy;2019 &bull; Brothers Ortiz &bull; Name Cash &bull; Company &bull; <span id="currentdate"></span>
             </footer>
         <script src="../js-or/contabilidad/diarios.js"> </script>

@@ -115,68 +115,28 @@ nav li li{
         margin: 0;
     }
     }
-    /*EDICIONES PARA LA TABLA */
-    table{
-        position: fixed;
-        top: 200px;
-        left: 450px;
+    #tablaingreso{
+      position: absolute;
+
     }
-    #diariosData {
-        border-collapse: collapse;
-        margin: 5px auto;
-      }
-      #diariosData th {
-        background-color: #333;
-        color: #fff;
-      }
-      #diariosData th,
-      #diariosData td {
-        border: 1px solid #999;
-        padding: 7px;
-      }
-      #diariosData tr:nth-child(odd) {
-        background-color: #eee;
-      }
-      #diariosData tr:nth-child(even) {
-        background-color: #87e661;
-      }
-      /*labels e imputs*/
-      #lblfecha{
-        position: fixed;
-        top: 5em;
-        left: 50em;
-      }
-      #fecha{
-        position: fixed;
-        top: 7.7em;
-        left: 80em;
-      }
-      label{
-          font-size: 20px;
-      }
-      #lblconcepto{
-        position: fixed;
-        top: 8em;
-        left: 15em;
-      }
-      #concepto{
-        position: fixed;
-        top: 12em;
-        left: 34em;
-      }
-      #lblnumreodiario{
-        position: fixed;
-        top: 6.4em;
-        left: 15em;
-      }
-      #numeroDiario{
-        position: fixed;
-        top: 10em;
-        left: 34em;
-      }
-      /*Boton añadir*/
-      #añadirFila{
-        position: relative;
-        top: 95px;
-        left: 850px;
-      }
+    #tabladatos{
+      position: absolute;
+      top:280px;
+    }
+    #datos{
+     /* border-collapse: collapse;*/
+        margin: 10px auto;
+        border-color: rgb(86, 253, 86);
+    }
+    #datos th {
+      background-color: #333;
+      color: #fff;
+    }
+    #datos tr:nth-child(odd) {
+      background-color: #eee;
+    }
+    #datos tr:nth-child(even) {
+      background-color: #87e661;
+    }
+
+      
