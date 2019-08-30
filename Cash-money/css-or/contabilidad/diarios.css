@@ -116,15 +116,25 @@ nav li li{
     }
     }
     #tablaingreso{
+        background-color:green;
+        color: #fff;
       position: absolute;
+      left: 30%;
+      top: 100px;
 
     }
     #tabladatos{
+        background-color: green;
+        color: #fff;
       position: absolute;
-      top:280px;
+      left: 35%;
+      top:300px;
+    }
+    legend{
+        background-color: green;
+
     }
     #datos{
-     /* border-collapse: collapse;*/
         margin: 10px auto;
         border-color: rgb(86, 253, 86);
     }

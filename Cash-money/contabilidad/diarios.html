@@ -64,61 +64,15 @@
                 <li><a href="../activos-fijos/activos-fijos.html">ACTIVOS FIJOS</a></li>
             </ul></li>
            </nav>      
-        <!--<main>             
-          <label id="lblnumreodiario">Numero diario<input type="text" id="numeroDiario"></label>          
-          <label id="lblfecha">Fecha<input type="text" id="fecha" placeholder="  mm/dd/aaaa"></label>          
-          <label id="lblconcepto">Concepto<input type="text" id="concepto" size="40"></label>          
-               <div id="table" class="table-editable">
-                <button id="añadirFila"><span class="table-add" onclick="añadirFila()">Añadir</span></button>
-                <table class="table" id= "diariosData">
-                  <tr>
-                    <th>MOD</th>
-                    <th>CODIGO</th>
-                    <th>CUENTA</th>
-                    <th>REF</th>
-                    <th>DESCRIPCION</th>
-                    <th>DEBE</th>
-                    <th>HABER</th>
-                    <th></th>
-                   </tr>
-                  <tr>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td>
-                     <button> <span class="table-remove">Quitar</span></button>
-                    </td>
-                     </tr>
-                 This is our clonable table line
-                  <tr class="hide">
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td contenteditable="true"></td>
-                    <td>
-                      <button> <span class="table-remove">Quitar</span></button>
-                    </td>
-                       
-                  </tr>
-                </table>
-              </div>
-        </main> -->  
         <form action="../php-or/contabiliad/diarios/drs_insert.php" method="POST">
         <fieldset id ="tablaingreso"> 
           <legend>Ingreso de Datos</legend>
           <table>
               <tr>
                 <td>Numero diario:
-                  <input type="text" name="txt_numDiario">
+                  <input type="text" name="txt_numDiario" placeholder="AUTOMATICO">
                   Fecha:
-                    <input type="text" name="txt_fecha">
+                    <input type="text" name="txt_fecha" placeholder="AAAA-MM-DD">
                 </td>
               </tr>
               <tr>
@@ -129,10 +83,9 @@
               </tr>
               <tr>
                   <td>Modulo :
-                    <input type="radio" name="txt_modulo" checked value ="debe"/>Debe
-                    <input type="radio" name="txt_modulo"value ="haber"/>Haber
-                    Cuenta:
-                    <input type="text" name="txt_cuenta">
+                    <input type="radio" name="txt_modulo" checked value ="debe"/>Debe <input type="text" name="txt_debe">
+                    <input type="radio" name="txt_modulo"value ="haber"/>Haber <input type="text" name="txt_haber">
+                   
                   </td>
                </tr>
                 <tr>
@@ -141,16 +94,11 @@
                     </td>
                 </tr>
                 <tr>
-                    <td>Debe:
-                      <input type="text" name="txt_debe">
-                    </td>
-                 </tr>
-                 <tr>
-                    <td>Haber:
-                      <input type="text" name="txt_haber">
+                    <td> Cuenta:
+                      <input type="text" name="txt_cuenta">
                       <button type="submit">Agregar</button>
                     </td>
-                  </tr>
+                </tr>
           </table>
         </fieldset>
         <hr>
