@@ -94,6 +94,7 @@ main {
 	color: #fff;
 	font-size: 18px;
 	border-radius: 20px;
+	position: fixed;
   }
   .btn:hover{
 	cursor: pointer;

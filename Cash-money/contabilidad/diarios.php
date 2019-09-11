@@ -12,7 +12,7 @@
     <body>
         
         <header>
-         <input type="checkbox" id="btn-menu"></input>    
+         <input type="checkbox" id="btn-menu">    
          <label for="btn-menu"><img src="imagenes/menu.png" width="30" height="30" alt=""></label>
         </header>
         <nav >
@@ -20,7 +20,7 @@
                 <li><a href="">CONTABILIDAD</a>
                 <ul>
                     <li><a href="../contabilidad/plan-de-cuentas.html">PLAN DE CUENTAS</a></li>
-                    <li><a href="../contabilidad/diarios.html">DIARIOS</a></li>
+                    <li><a href="../contabilidad/diarios.php">DIARIOS</a></li>
                     <li><a href="../contabilidad/egresos.html">EGRESOS</a></li>
                     <li><a href="../contabilidad/notas-de-creditos.html">NOTAS DE CRÉDITOS</a></li>
                     <li><a href="../contabilidad/notas-debito.html">NOTAS DE DÉBITO</a></li>
@@ -70,9 +70,9 @@
           <table>
               <tr>
                 <td>Numero diario:
-                  <input type="text" name="txt_numDiario" placeholder="AUTOMATICO">
+                  <input type="text" name="txt_numDiario" disabled placeholder="AUTOMATICO">
                   Fecha:
-                    <input type="text" name="txt_fecha" placeholder="AAAA-MM-DD">
+                    <input type="date" name="txt_fecha" placeholder="AAAA-MM-DD">
                 </td>
               </tr>
               <tr>
@@ -101,25 +101,45 @@
                 </tr>
           </table>
         </fieldset>
-        <hr>
         <fieldset id="tabladatos">
         <legend>Datos para visualizar</legend>
           <table id="datos">
-            <tr>
+            <tbody>
+             <tr>
               <th>Modulo</th>
               <th>Cuenta</th>
               <th>Referencia</th>
               <th>Concepto</th>
               <th>Debe</th>
               <th>Haber</th>
-            </tr>
+             </tr>  
+             <?php 
+             include ("conexion.php");
+             $query= "SELECT * FROM diarios";
+             $resultado = $con->query($query);
+             while($row=$resultado->fetch_assoc()){
+              ?>
+              <tr>
+              <td><?php echo $row['drs_modulo']?></td>
+              <td><?php echo $row['drs_cuenta']?></td>
+              <td><?php echo $row['drs_referencia']?></td>
+              <td><?php echo $row['drs_concepto']?></td>
+              <td><?php echo $row['drs_debe']?></td>
+              <td><?php echo $row['drs_haber']?></td>
+              </tr>
+              <?php   
+            }
+              ?>                                  
+
+            </tbody>
 
           </table>
         </fieldset>
       </form>
-       <footer>
+       <footer id="footer">
             &copy;2019 &bull; Brothers Ortiz &bull; Name Cash &bull; Company &bull; <span id="currentdate"></span>
             </footer>
         <script src="../js-or/contabilidad/diarios.js"> </script>
+        
     </body>
 </html>

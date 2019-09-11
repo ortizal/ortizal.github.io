@@ -15,15 +15,19 @@
             <h2>Name cash</h2>
           </header>
           <main class=login-box>
-             <img src="imagenes/logo.jpg" class="avatar" alt="Imagen logo">
-             <h3> INICIO DE SESION</h3>
-             <label> USUARIO <input type=text name="txt_usuario" id="usname"  placeholder="USUARIO"></label>
-             <label> CONTRASEÑA <input type="password" name="txt_contraseña" id="pasword" placeholder="CONTRASEÑA">
-             <label><button onclick="singin()" class="btn"> Sing in </button></label>
-             <a href="menu.html" id="menulu"></a>
-             <label><button onclick="registro()" class="btn"> registro </button></label>
-             <a href="registro.html" id="registro"></a>
-          </main>   
+              <form action="../Cash-money/php-or/imr/into/int_insert.php" method="POST">
+                <img src="imagenes/logo.jpg" class="avatar" alt="Imagen logo">
+                <h3> INICIO DE SESION</h3>
+                <label> USUARIO <input type="text" name="txt_usuario" id="usname"  placeholder="USUARIO"></label>
+                <label> CONTRASEÑA <input type="password" name="txt_pasword" id="pasword" placeholder="CONTRASEÑA">
+                <label><button type="submit" onclick="singin()" class="btn"> Sing in </button></label>
+                     
+             </form>
+             
+         </main>   
+          
+         <label><button onclick="registro()" class="btn" > Registro </button></label>  
+          
           <div class="ventana" id="vent"> 
                 <img src="../Cash-money/imagenes/logo.jpg" alt="Ventana Flotante" >
                 <div id="cerrar">

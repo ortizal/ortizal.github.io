@@ -5,6 +5,7 @@ body{
     background-repeat: no-repeat; 
     background-position: center 50px;
     background-size: 500px;
+   
 }
 header{
     width: auto;
@@ -35,8 +36,7 @@ footer {
     background-color:green;
     color: #fff;
     padding: 10px;
-    position: absolute;
-    bottom: 0;
+    margin-top: 90%;
     width: 100%;
   
 }
@@ -118,7 +118,7 @@ nav li li{
     #tablaingreso{
         background-color:green;
         color: #fff;
-      position: absolute;
+      position: absolute ;
       left: 30%;
       top: 100px;
 
@@ -126,7 +126,7 @@ nav li li{
     #tabladatos{
         background-color: green;
         color: #fff;
-      position: absolute;
+     position: absolute ;
       left: 35%;
       top:300px;
     }
@@ -143,10 +143,8 @@ nav li li{
       color: #fff;
     }
     #datos tr:nth-child(odd) {
-      background-color: #eee;
+      background-color: rgb(96, 189, 111);
     }
     #datos tr:nth-child(even) {
-      background-color: #87e661;
+      background-color: #7afd5f;
     }
-
-      
